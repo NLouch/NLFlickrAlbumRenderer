@@ -1,0 +1,86 @@
+/* GRID */
+.imageList.list{
+    width: 100%;
+}
+.imageList.list UL{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.imageList.list UL LI.itemHolder{
+    list-style-type: none;
+    display: block;
+    background: #e3e9f5;
+    border-radius: 5px;
+    border: 1px solid #454e5c;
+    margin-bottom: 15px;
+    padding: 5px;
+    transition: all 1s;
+}
+.imageList.list UL LI.itemHolder A{
+    text-decoration: none;
+}
+.imageList.list UL LI.itemHolder DIV.imageHolder{
+    height: 110px;
+    width: 180px;
+    border-radius: 5px;
+    border: 1px solid #454e5c;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align:top;
+}
+.imageList.list UL LI.itemHolder DIV.imageHolder DIV.image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(0.8);
+    transition: all 1s ease;
+    width: 100%;
+    height: 100%;
+}
+.imageList.list UL LI.itemHolder:hover{
+    background: #c5d0e2;
+    color: #333;
+}
+.imageList.list UL LI.itemHolder:hover DIV.imageHolder DIV.image{
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+.imageList.list UL LI.itemHolder DIV.textHolder{
+    height: 110px;
+    width: CALC(100% - 192px);
+    display: inline-block;
+    vertical-align:top;
+    font-size: 0.9em;
+}
+.imageList.list UL LI.itemHolder DIV.textHolder DIV.textTitle{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.imageList.list UL LI.itemHolder DIV.textHolder DIV.textMeta{
+    font-size: 0.7em;
+    line-height: 1.2em;
+    font-style: italic;
+}
+.imageList.list UL LI.itemHolder DIV.textHolder DIV.textMeta A{
+    text-decoration: none;
+}
+.imageList.list UL LI.itemHolder DIV.textHolder DIV.textDescription{
+    font-size: 0.8em;
+    line-height: 1.2em;
+    margin-top: 0.4em;
+}
+
+@media screen and (max-width: 900px) {
+    .imageList.list UL LI.itemHolder DIV.imageHolder{
+        clear: both;
+        width: 100%;
+    }
+    .imageList.list UL LI.itemHolder DIV.textHolder{
+        clear: both;
+        width: 100%;
+        height: unset;
+    }
+}

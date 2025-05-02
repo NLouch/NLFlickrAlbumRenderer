@@ -1,0 +1,28 @@
+/* GENERIC */
+DIV.photosetHeader{
+    background-color:  #454e5c;
+    padding: 10px 15px 10px 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 2em;
+}
+DIV.photosetHeader H3.photosetTitle{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+DIV.photosetHeader H4.photosetDescription{
+    color: #FFF;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+}
+DIV.photosetBody{
+    background-color:  #CCC;
+    border: 1px solid #454e5c;
+    padding: 15px 15px 0px 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
